@@ -5,6 +5,7 @@
     box-shadow: 20px;
   }
 
+
   .head-space {
     position: relative; 
     padding: 10px;
@@ -16,9 +17,34 @@
     width: 100%;
     justify-content: left; 
 }
+
+.navi {
+    font-family: apple chancery, cursive;
+    top: 0px;
+    position:relative;
+    display: inline;
+    list-style-type: katakana;
+    color: black;
+}
+
+ .navi div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: apple chancery, cursive;
+    top: 0px;
+    font-size: 20px;
+}
+
+
+.navi div ul li {
+    display: inline-block;
+    margin-left: 25px;
+    list-style-type: none;
+}
   
   body {
-    font-family: Arial;
+    font-family: bradley hand, cursive;
     margin: 0;
     background-color: #7fca38;
   }
@@ -47,6 +73,10 @@
     background: #13293d;
     color: #fff;
   }
+
+ #special img {
+    height: 300px;
+ }
   .kewl {
     height: 500px;
     width: 70%;
@@ -66,7 +96,7 @@
   }
 
   .card {
-    background: linear-gradient(rgb(171, 179, 171), rgb(19, 98, 1));
+    background: linear-gradient( rgb(19, 98, 1),rgb(171, 179, 171));
     flex: 1 0 0;
     padding: 10px;
     text-align: center;
@@ -102,9 +132,28 @@
     background-position: center;
 }
 
+ #education img {
+    height: 80px;
+    width: 50px;
+ }
+
+ .footer {
+    font-size: 18px;
+    padding: 30px;
+    clear: both;
+    font-family: Trattatello, fantasy;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    border: 5px solid #151413;
+    border-radius: 20px;
+    background: linear-gradient(rgb(28, 170, 28), rgb(17, 79, 3));
+    color: rgb(206, 222, 210);
+}
+
   @media screen and (min-width: 1025px) {
     .card {
-      width: 25%;
+      width: 50%;
     }
    .card img {
     height: 100px;
@@ -115,11 +164,11 @@
   }
   @media screen and (max-width: 1024px) {
     .card {
-      width: 25%;
+        width: 50%;
     }
    
     header {
-      background: #277827;
+      
     }
   }
   
@@ -130,7 +179,7 @@
     }
     
     header {
-      background: #4cd675;
+      
     }
   }
   @media screen and (max-width: 480px) {
