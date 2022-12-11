@@ -4,7 +4,10 @@
     margin: auto;
     box-shadow: 20px;
   }
-
+ img {
+  cursor: url(/greedy-photo/yoshi.png)
+ }
+  
 
   .head-space {
     position: relative; 
@@ -23,30 +26,35 @@
     top: 0px;
     position:relative;
     display: inline;
-    list-style-type: katakana;
+    list-style-type: none;
     color: black;
 }
 
- .navi div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: apple chancery, cursive;
-    top: 0px;
-    font-size: 20px;
+ .skull {
+    background: url(/greedy-photo/skull.png) no repeat left top; 
+    height: 7px;
+ }
+ul {
+  list-style: none;
+  list-style-image: url(/greedy-photo/skull.png);
+  height:3px;
+}
+ul li:before{
+  content:"/greedy-photo/skull.png"; font-size: 10px;
 }
 
-
-.navi div ul li {
+.navi section ul li {
     display: inline-block;
     margin-left: 25px;
     list-style-type: none;
+
 }
   
   body {
     font-family: bradley hand, cursive;
     margin: 0;
     background-color: #7fca38;
+    cursor: url(/greedy-photo/yoshi.png)
   }
   
   main {
@@ -116,6 +124,10 @@
     background: linear-gradient(rgb(28, 170, 28), rgb(17, 79, 3));
     color: rgb(206, 222, 210);
   }
+
+  #contact {
+    border-radius: 10px;
+  }
   
   .card img {
     width: 100%;
@@ -133,6 +145,8 @@
 }
 
  #education img {
+  display: flex;
+  flex-wrap: wrap;
     height: 80px;
     width: 50px;
  }
@@ -153,21 +167,29 @@
 
   @media screen and (min-width: 1025px) {
     .card {
-      width: 50%;
+      width: auto;
     }
    .card img {
-    height: 100px;
+    height: auto;
    }
-    header {
-      background: #3e783e;
-    }
+   .riley {
+    width: auto;
+  }
+  .navi {
+    float: right;
+    white-space: nowrap;
+  }
   }
   @media screen and (max-width: 1024px) {
     .card {
-        width: 50%;
+        width: auto;
+    }
+    .riley {
+      width: auto;
     }
    
-    header {
+    .navi {
+      float: right;
       
     }
   }
@@ -176,8 +198,17 @@
   @media screen and (max-width: 768px) {
     .card {
       width: 50%;
+      justify-content: space-around;
     }
-    
+    #education img {
+      max-width: 50%;
+      
+     }
+  .riley {
+      max-width: 50%;
+      max-height: 25%;
+     
+  }
     header {
       
     }
