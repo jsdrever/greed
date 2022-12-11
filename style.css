@@ -20,6 +20,7 @@
   body {
     font-family: Arial;
     margin: 0;
+    background-color: #7fca38;
   }
   
   main {
@@ -33,7 +34,7 @@
     width: 100%;
     margin-top: 0px;
     margin-bottom: 25px;
-    background-image: url("picture/pretty-green.jpg");
+    background-image: url("greedy-photo/pretty-green.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -46,6 +47,15 @@
     background: #13293d;
     color: #fff;
   }
+  .kewl {
+    height: 500px;
+    width: 70%;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    background-image: url("/greedy-photo/kewl.png");
+    background-size: cover;
+    background-position: left;
+}
   
   .lol {
     position: fixed;
@@ -56,23 +66,41 @@
   }
 
   .card {
+    background: linear-gradient(rgb(171, 179, 171), rgb(19, 98, 1));
     flex: 1 0 0;
     padding: 10px;
     text-align: center;
     border-style: solid;
     border-width: 1px;
+    border: solid 5px rgba(88, 198, 90, 0.825);
   }
   
   .card header {
-    padding: 20px;
-    background: #13293d;
+    font-family: apple chancery, cursive;
+    font-size: xx-large;
+    padding: 5px;
+    
     color: #fff;
+    border:solid 3px #151413;
+    border-radius: 10px;
+    background: linear-gradient(rgb(28, 170, 28), rgb(17, 79, 3));
+    color: rgb(206, 222, 210);
   }
   
   .card img {
     width: 100%;
     min-width: 400px;
   }
+
+  .stumpy {
+    height: 300px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    background-image: url("greedy-photo/stump.JPG");
+    background-size: cover;
+    background-position: center;
+}
 
   @media screen and (min-width: 1025px) {
     .card {
@@ -82,7 +110,7 @@
     height: 100px;
    }
     header {
-      background: #277827;
+      background: #3e783e;
     }
   }
   @media screen and (max-width: 1024px) {
@@ -111,8 +139,8 @@
       justify-content: center;
     }
     .card img {
-        height: 400px;
-        width: 25px;
+        height: 500px;
+        
        }
     .riley {
         max-width: 50%;
@@ -120,6 +148,6 @@
        
     }
     header {
-      background: #44ed47;
+      background: #3cad3e;
     }
   }
